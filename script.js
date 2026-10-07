@@ -24,8 +24,10 @@ function isValidName(value) {
     return true;
 }
 
+registerCont.classList.add('Hide');
+
 function isValidEmail(value) {
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]$/;
 
     if (typeof value !== "string") {
         return true;
